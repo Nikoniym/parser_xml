@@ -95,7 +95,6 @@ describe Hash do
             <id>76737</id>
           </multiRef>
     XML
-    print Hash.from_xml(xml)
     expect(Hash.from_xml(xml)[:multiRef]).to eq({ :login => "grep", :"@id" => "id1", :id => "76737" })
   end
 
